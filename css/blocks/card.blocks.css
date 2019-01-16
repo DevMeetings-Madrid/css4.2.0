@@ -1,0 +1,43 @@
+.b-card {
+  /*Si queremos modificar una variable según una media query es posible. Lo seteamos en el root*/
+  --b-card--max-width : 300px;
+
+  width               : 100%;
+  /*De esta forma con una sola llamada a la variable tenemos varios comportamientos segun el tamaño de pantalla*/
+  max-width           : var(--b-card--max-width);
+  background-color    : var(--r-color-primary--o-20);
+  padding             : 30px;
+}
+
+.b-card__title, .b-card__text {
+  color : var(--r-color-gray-33);
+}
+
+.b-card--sec {
+  --b-card--sec--color : var(--r-color-sec);
+  color                : var(--r-color-war);
+  background-color     : var(--r-color-sec--o-20);
+}
+
+.b-card--third {
+  --b-card--third--color : var(--r-color-third);
+  background-color       : var(--r-color-third--o-20);
+}
+
+.b-card--sec .b-card__title {
+  color : currentColor;
+}
+
+.b-card--sec .b-card__sign {
+  color : currentColor;
+}
+
+@media (max-width : 480px) {
+
+  .b-card {
+    /*Aqui simplemente la modificamos para que la variable cambie con esta query*/
+    --b-card--max-width : 80%;
+
+    margin              : 0 auto;
+  }
+}

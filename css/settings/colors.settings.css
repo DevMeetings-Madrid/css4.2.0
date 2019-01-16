@@ -1,0 +1,20 @@
+:root {
+  --r-color-black         : #000;
+  --r-color-gray-33       : #333;
+  --r-color-gray-50       : #ededed;
+  --r-color-gray-90       : #fffeee;
+  --r-color-white         : #fff;
+
+  --r-color-primary       : #3B9ADB;
+  --r-color-primary--o-20 : #3B9ADB20;
+
+  --r-color-sec           : #DBBA24;
+  --r-color-sec--o-20     : #DBBA2420;
+
+  --r-color-third         : #DB6419;
+  --r-color-third--o-20   : #DB641920;
+
+  --r-color-war           : #DB8C1D;
+  --r-color-error         : #DB281F;
+  --r-color-success         : #5DDB34;
+}

@@ -1,0 +1,12 @@
+.b-form {
+  display        : flex;
+  width          : 100%;
+  flex-direction : column;
+}
+
+.b-form__field {
+  display        : flex;
+  flex-direction : row-reverse;
+  align-items    : center;
+  margin         : 10px 0;
+}

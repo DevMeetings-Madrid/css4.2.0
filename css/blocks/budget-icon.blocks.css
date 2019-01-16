@@ -1,0 +1,85 @@
+.b-budget-icon {
+  --b-budget-icon--size : 46px;
+
+  display               : block;
+
+  fill : var(--b-card--sec--color, var(--b-card--third--color, var(--r-color-black)));
+}
+
+.b-budget-icon:before {
+  font-size     : 15px;
+  color         : var(--r-color-white);
+  padding       : 6px;
+  border-radius : 100%;
+  border        : 4px solid transparent;
+}
+
+.b-budget-icon:after {
+  content       : '';
+  position      : absolute;
+  width         : calc(100% + 6px);
+  height        : calc(100% + 6px);
+  border-radius : 100%;
+}
+
+.b-budget-icon__text:before {
+  content    : attr(data-content);
+  text-align : center;
+  display    : block;
+}
+
+.b-budget-icon__icon {
+  margin           : 0 auto;
+  background-color : transparent;
+  position         : relative;
+  display          : block;
+  justify-content  : center;
+  border-radius    : 100%;
+
+  /* En caso de no existir la variable se asignaria el vlaor 40px
+  Muy util por ejemplo a la hora de componentizar. Si tuvieramos un componente que
+  puede ubicarse dentro de varios diferentes componentes y queremos que tenga unos
+  estilos diferentes en cada uno de ellos podemos especificar valores a tener en
+  caso de no identificar las variables de los componentes padre.
+
+  background-color: var(--my-var, var(--my-background, pink)); /* Rosa (pink) si my-var y --my-background no están definidas
+  */
+  width            : var(--b-budget-icon--size, 40px);
+  height           : var(--b-budget-icon--size, 40px);
+
+}
+
+
+
+.b-budget-icon__icon--tiny {
+  height : calc(var(--b-budget-icon--size) * var(--r-mn-tiny));
+  width  : calc(var(--b-budget-icon--size) * var(--r-mn-tiny));
+}
+
+.b-budget-icon__icon--small {
+  height : calc(var(--b-budget-icon--size) * var(--r-mn-small));
+  width  : calc(var(--b-budget-icon--size) * var(--r-mn-small));
+}
+
+
+.b-budget-icon__icon--little {
+  height : calc(var(--b-budget-icon--size) * var(--r-mn-little));
+  width  : calc(var(--b-budget-icon--size) * var(--r-mn-little));
+}
+
+
+.b-budget-icon__icon--large {
+  height : calc(var(--b-budget-icon--size) * var(--r-mn-large));
+  width  : calc(var(--b-budget-icon--size) * var(--r-mn-large));
+}
+
+
+.b-budget-icon__icon--big {
+  height : calc(var(--b-budget-icon--size) * var(--r-mn-big));
+  width  : calc(var(--b-budget-icon--size) * var(--r-mn-big));
+}
+
+.b-budget-icon__icon--huge {
+  height : calc(var(--b-budget-icon--size) * var(--r-mn-huge));
+  width  : calc(var(--b-budget-icon--size) * var(--r-mn-huge));
+}

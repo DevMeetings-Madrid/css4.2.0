@@ -1,0 +1,30 @@
+.b-input {
+  margin  : 0 10px;
+  display : block;
+}
+
+.b-input:invalid {
+  border : 1px solid var(--r-color-error);
+
+}
+
+.b-input:invalid ~ .b-label:after {
+  content : 'Venga que no es tan dificil';
+  display : block;
+  color   : var(--r-color-error);
+}
+
+.b-input:valid {
+  border : 1px solid var(--r-color-primary);
+
+}
+
+.b-input:read-only {
+  pointer-events : none;
+  opacity        : 0.5;
+}
+
+.b-input:out-of-range ~ .b-label:after {
+  content : 'El número debería estar entre ' attr(data-min) ' y ' attr(data-max);
+  color   : var(--r-color-error);
+}
