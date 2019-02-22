@@ -1,5 +1,13 @@
 # CSS4: Novedades de la versión que nunca llegará
 
+### Autor del Meetup
+
+Abel Cabeza Román
+
+### Video
+
+La grabación de la charla está colgada en <https://www.youtube.com/watch?v=Ed7yDSSQj2w/>
+
 ### Slides
 
 Puedes visualizar las slides en <https://devmeetings-madrid.github.io/css4.2.0/>
